@@ -2,11 +2,12 @@ name: Lint Code Base
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      -main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      -main
 
-# 👇 403エラー（書き込み権限不足）を直すためにここを追加します
 permissions:
   contents: read
   statuses: write
